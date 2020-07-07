@@ -1,0 +1,319 @@
+/* ------------------------------------- General styles -------------------------------------*/
+
+* {
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+main {
+	min-height: calc(100vh - 74px);
+	padding-bottom: 10vh;
+}
+
+footer {
+	min-height: 75px;
+	width: 100%;
+	box-shadow: inset 0px 25px 20px -20px rgba(0, 0, 0, 0.35);
+	background-color: #2d8656;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+footer a {
+	color: inherit;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.btn {
+	color: white;
+	color: rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+	padding: 0.5rem 1rem;
+	border: 0;
+}
+
+.btn:hover {
+	color: white;
+	box-shadow: 4px 6px 32px -13px rgba(0, 0, 0, 0.75);
+}
+
+.green-btn {
+	background: rgb(0, 179, 47);
+	background: linear-gradient(135deg, rgba(0, 179, 47, 1) 50%, rgba(0, 179, 89, 1) 100%);
+}
+
+.blue-btn {
+	background: rgb(31, 57, 255);
+	background: linear-gradient(135deg, rgba(31, 57, 255, 1) 50%, rgba(4, 33, 255, 1) 100%);
+}
+
+.purple-btn {
+	background: rgb(104, 22, 255);
+	background: linear-gradient(135deg, rgba(104, 22, 255, 1) 50%, rgba(92, 3, 255, 1) 100%);
+}
+
+.logo {
+	font-family: 'Lobster', cursive;
+	color: #3e7256 !important;
+}
+
+/* ------------------------------------- Navbar styles -------------------------------------*/
+
+.navbar {
+	margin: 0 auto;
+	max-width: 1600px;
+}
+
+.navbar-brand {
+	font-size: 2rem;
+}
+
+.nav-item.active {
+	font-weight: bold;
+}
+
+#loginModal .modal-dialog {
+	max-width: 300px;
+}
+
+#loginModal h5 {
+	color: #3e7256;
+	font-weight: bold;
+}
+
+/* ------------------------------------- Page header styles -------------------------------------*/
+
+header {
+	height: fit-content;
+	position: relative;
+	max-width: 1600px;
+}
+
+header img {
+	width: 100%;
+	height: calc(100vh - 74px);
+	max-height: 800px;
+	object-fit: cover;
+	object-position: 30% 0%;
+	opacity: 0.3;
+}
+
+header .container-fluid {
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.header-text h1 {
+	font-size: 3.5rem;
+	color: #3e7256;
+}
+
+@media (min-width: 768px) {
+	header img {
+		opacity: 1;
+	}
+
+	.header-text {
+		border-radius: 1rem;
+		background-color: rgba(255, 255, 255, 0.4);
+	}
+
+	.header-text h1 {
+		font-size: 5.5rem;
+	}
+}
+
+/* ------------------------------------- Home page styles -------------------------------------*/
+
+#home section {
+	margin: 10vh auto 20vh auto;
+}
+
+#home section h2 {
+	color: #3e7256;
+}
+
+#home section p {
+	margin-top: 1rem;
+	font-size: 1.3rem;
+	line-height: 2.5rem;
+}
+
+#home section .row {
+	margin-bottom: 10vh;
+}
+
+#action {
+	color: white;
+	border-radius: 1rem;
+	background: rgb(62, 114, 86);
+	background: linear-gradient(135deg, rgba(35, 171, 98, 1) 10%, rgba(35, 171, 98, 0.2) 100%);
+	box-shadow: inset 0px 0px 45px -20px rgba(0, 0, 0, 0.75);
+}
+
+#action h1 {
+	text-shadow: 1px 1px 8px #000000;
+}
+
+#action img {
+	transform: scale(1.5);
+}
+
+/* ------------------------------------- Features styles -------------------------------------*/
+
+#features header img {
+	object-position: 50% 0%;
+}
+
+#features header .header-text {
+	/* margin-top: 10vh; */
+}
+
+#features section {
+	margin: 10vh auto;
+}
+
+#features .card {
+	margin-top: 125px;
+	background-color: #f2f2f2;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#features .card figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	margin: 0 auto;
+	transform: translate(0, -50px) scale(2, 2);
+	box-shadow: 0px -3px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+#features .card img {
+	width: 50px;
+	height: 50px;
+}
+
+#features .col:nth-child(1) figure {
+	background-color: #5e6286;
+}
+
+#features .col:nth-child(2) figure {
+	background-color: #f69272;
+}
+
+#features .col:nth-child(3) figure {
+	background-color: #98c69a;
+}
+
+#features .col:nth-child(4) figure {
+	background-color: #ffeb9b;
+}
+
+#features .col:nth-child(5) figure {
+	background-color: #01a7a6;
+}
+
+#features .col:nth-child(6) figure {
+	background-color: #ea7a93;
+}
+
+/* ------------------------------------- Pricing page styles -------------------------------------*/
+
+#pricing h1 small {
+	font-size: 0.5em;
+}
+
+#pricing li {
+	padding: 0.45rem 0;
+}
+
+#pricing .card {
+	transition: 0.35s ease;
+}
+
+#pricing .card:hover {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ------------------------------------- Signup page styles -------------------------------------*/
+
+#signup form {
+	padding: 1.5rem;
+	background-color: #f2f2f2;
+	max-width: 800px;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ------------------------------------- Contact page styles -------------------------------------*/
+
+#contact .card {
+	background-color: #f2f2f2;
+}
+
+#contact .card img {
+	width: 50px;
+	height: 50px;
+}
+
+/* ------------------------------------- Customers page styles -------------------------------------*/
+
+#customers .review img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	object-position: 0 20%;
+	border-radius: 50%;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+	transition: transform 0.15s;
+}
+
+#customers .row:hover img {
+	transform: scale(1.02, 1.02);
+}
+
+/* ------------------------------------- About page styles -------------------------------------*/
+
+#about figure {
+	position: relative;
+}
+
+#about img {
+	max-width: 100%;
+	border-radius: 0.5rem;
+	transition: all 0.25s ease-out;
+}
+
+#about img:hover {
+	box-shadow: -2px 0 8px 0px rgba(0, 0, 0, 0.2), 2px 0 8px 0px rgba(0, 0, 0, 0.2);
+	transform: scale(1.02, 1.02);
+}
+
+#about figcaption {
+	position: absolute;
+	bottom: 0;
+	height: 2rem;
+	border-radius: 0.5rem;
+	width: 100%;
+	transition: transform 0.25s ease-out;
+	z-index: -1;
+}
+
+#about figcaption span {
+	background-color: #efefef;
+	border: 1px solid #dedede;
+	font-size: 1rem;
+	padding: 0.35rem 1rem;
+	border-radius: 0 0 0.25rem 0.25rem;
+}
+
+#about img:hover + figcaption {
+	transform: translate(0, 2.45rem);
+}

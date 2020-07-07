@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeleTalk</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand logo" href="index.html">TeleTalk</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="features.html">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="customers.html">Our Customers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+      </ul>
+      <button class="btn green-btn mx-3 my-sm-0" type="submit" data-toggle="modal" data-target="#loginModal">Log In</button>
+      <a href="signup.html" class="btn blue-btn my-2 my-sm-0">Create Account</a>
+    </div>
+  </nav>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Log In</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn green-btn">Log In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customers Content -->
+  <main id="customers">
+    <header class="container-fluid px-0">
+      <!-- Photo by Andrea Piacquadio from Pexels -->
+      <img src="images/man-in-black-suit-jacket-using-macbook.jpg" alt="Man in black suit jacket using macbook">
+      <div class="container-fluid">
+        <div class="row justify-content-center align-items-center align-items-md-start text-center h-100">
+          <div class="col-md-11 col-lg-10 col-xl-8 header-text mt-md-5">
+            <h1>Our Customers</h1>             
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+
+      <div class="row">
+        <div class="col mt-5">
+          <h1 class="text-center mb-5">What our customers have to say</h1>
+        </div>
+      </div>
+
+      <div class="row review justify-content-center py-4">
+        <div class="col-auto">
+          <img class="mr-md-3" src="images/christian-lunde-Gf8xG0a0XDY-unsplash.jpg" alt="smiling man in brown coat">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <h3 class="text-center text-md-left my-3 mt-md-0 mb-md-2">Anthony Wheatley</h3>
+          <p class="m-0 text-justify">
+            Our company loves TeleTalk! My team is located across the country, and we have weekly online meetings to discuss current and upcoming projects.
+            In the past, we struggled with unreliable video conferencing solutions. Now that we've switched to TeleTalk, we spend less time troubleshooting
+            connection problems and more time being productive. Thanks TeleTalk!
+          </p>
+        </div>
+      </div>
+
+      <div class="row review justify-content-center py-4">
+        <div class="col-auto">
+          <img src="images/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="smiling woman in grey coat" class="mr-md-3">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <h3 class="text-center text-md-left my-3 mt-md-0 mb-md-2">Linda Munroe</h3>
+          <p class="m-0 text-justify">
+            My family is spread out across America, so it's difficult for all of us to gather in person at the same time. To stay in touch, we try to
+            video chat together on a regular basis. TeleTalk's simple interface has removed all the hassle from our video conferences. Even my parents thought it was easy
+            to use &mdash; and that's saying a lot! 
+          </p>
+        </div>
+      </div>
+
+      <div class="row review justify-content-center py-4">
+        <div class="col-auto">
+          <img src="images/creating-a-brand-2mMhaoBGjCs-unsplash.jpg" alt="smiling woman in grey coat" class="mr-md-3">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <h3 class="text-center text-md-left my-3 mt-md-0 mb-md-2">Emily Weston</h3>
+          <p class="m-0 text-justify">
+            As a professor, my work has been radically affected by the recent pandemic. I teach 3 on-campus classes, but I had to shift all of my classes to an
+            online format in a very short amount of time. I was concerned that migrating to online video conferences would be a time-consuming process. However,
+            TeleTalk has made online lectures a painless process! 
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="d-flex align-items-center justify-content-center px-3 py-2 flex-wrap">
+    <span class="mx-4 my-1 text-center">TeleTalk © 2020</span>
+    <span class="mx-4 my-1 text-center">Header photo by Andrea Piacquadio from <a href="https://www.pexels.com/">Pexels</a></span>
+    <span class="mx-4 my-1 text-center">Customer photos by Christian Lunde, Christina @ wocintechchat.com, and Creating a Brand (respectively) on <a href="https://unsplash.com/">Unsplash</a></span>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  
+</body>
+</html>
